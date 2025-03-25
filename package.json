@@ -1,0 +1,40 @@
+{
+  "name": "gg-network",
+  "version": "1.0.0",
+  "description": "GG Network est un réseau social conçu spécialement pour les passionnés de jeux vidéo et les créateurs de contenu YouTube. Il permet aux joueurs de se connecter, de partager leurs expériences, et aux vidéastes de promouvoir leurs contenus.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "commit": "cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Idazgit/GG-Network.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Idazgit/GG-Network/issues"
+  },
+  "homepage": "https://github.com/Idazgit/GG-Network#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint/js": "^9.23.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": "{\"*.js\": \"eslint --fix\", \"*\": \"prettier --write --ignore-unknown\"}",
+  "config": {
+    "commitizen": "{\"path\": \"./node_modules/cz-conventional-changelog\"}"
+  }
+}
