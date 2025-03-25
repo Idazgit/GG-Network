@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "prepare": "husky install",
+    "format": "prettier --write .",
+    "lint": "eslint .",
     "commit": "cz"
   },
   "repository": {
@@ -29,11 +31,14 @@
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
     "globals": "^16.0.0",
-    "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "husky": "^8.0.0"
   },
-  "lint-staged": "{\"*.js\": \"eslint --fix\", \"*\": \"prettier --write --ignore-unknown\"}",
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{json,md}": "prettier --write"
+  },
   "config": {
     "commitizen": "{\"path\": \"./node_modules/cz-conventional-changelog\"}"
   }
